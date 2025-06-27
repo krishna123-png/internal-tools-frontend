@@ -48,7 +48,7 @@ const Summarizer = () => {
                     const formdata = new FormData();
                     formdata.append('file', file);
                     const response = (await axios.post(
-                        `${import.meta.env.VITE_API_KEY}/api/tools/summarize`,
+                        `${import.meta.env.VITE_API_BASE}/api/tools/summarize`,
                         formdata,
                         {
                             headers: {
