@@ -1,0 +1,89 @@
+
+.code-tool-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6faff;
+}
+
+.code-tool-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.code-tool-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.code-tool-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: monospace;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  overflow-y: auto;
+}
+
+.code-tool-send {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.code-tool-send:hover {
+  background-color: #1e40af;
+}
+
+.code-tool-output {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-family: monospace;
+  font-size: 0.95rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #111827;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+  .code-tool-title {
+    font-size: 1.5rem;
+  }
+
+  .code-tool-input,
+  .code-tool-send,
+  .code-tool-output {
+    font-size: 0.95rem;
+  }
+
+  .code-tool-output {
+    max-height: 200px;
+  }
+}
+

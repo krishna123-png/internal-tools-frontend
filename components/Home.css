@@ -1,0 +1,140 @@
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.homepage-wrapper {
+    background: #f6f9ff;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.homepage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+.auth-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #003366;
+}
+
+a.register {
+    background-color: #007bff;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #e9f0ff, #f6f9ff);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #002244;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.start-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+    margin-top: 2rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features-section {
+    padding: 3rem 2rem;
+    background: #ffffff;
+}
+
+.features-section h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: #f1f5fb;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 300px;
+    flex: 1 1 250px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.feature-card h3 {
+    color: #002244;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}

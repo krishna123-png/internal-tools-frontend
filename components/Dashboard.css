@@ -1,0 +1,90 @@
+/* Dashboard.css */
+
+body {
+    margin: 0;
+}
+
+.dashboard-container {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #e6f0fd, #ffffff);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2.25rem;
+  color: #001944;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header p {
+  color: #4f525c;
+  font-size: 1.1rem;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.tool-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e6f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 50, 0.05);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: #001944;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 50, 0.1);
+}
+
+.tool-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tool-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #001944;
+}
+
+.tool-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4f525c;
+}
+
+@media (max-width: 600px) {
+  .dashboard-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .dashboard-header p {
+    font-size: 1rem;
+  }
+
+  .tool-card {
+    padding: 1rem;
+  }
+
+  .tool-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .tool-card p {
+    font-size: 0.9rem;
+  }
+}
+
