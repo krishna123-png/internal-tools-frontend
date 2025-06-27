@@ -76,6 +76,5 @@ const CodeTool = () => {
     </div>
   );
 };
-
 export default CodeTool;
 
